@@ -6,8 +6,8 @@
  <title>My First GitHub Page</title>
 
  <link rel="stylesheet" href="styles.css">
-</head>
 
+<style>
 body {
 
  font-family: Arial, sans-serif;
@@ -28,6 +28,9 @@ nav a:hover {
  text-decoration: underline;
 
 }
+</style>
+
+<style>
 main {
 
  padding: 20px;
@@ -49,6 +52,9 @@ main img {
  margin: 20px 0;
 
 }
+</style>
+
+<style>
 footer {
 
  background-color: #333;
@@ -66,6 +72,9 @@ footer {
  width: 100%;
 
 }
+</style>
+
+<style>
 p {
 
  font-size: 1.1em;
@@ -85,6 +94,9 @@ a:hover {
  text-decoration: underline;
 
 }
+</style>
+
+<style>
 img {
 
  border: 5px solid #4CAF50;
@@ -92,6 +104,7 @@ img {
  border-radius: 10px;
 
 }
+<style>
 main a[href^="mailto:"] {
 
  color: #ff5722;
@@ -99,3 +112,5 @@ main a[href^="mailto:"] {
  font-weight: bold;
 
 }
+</style>
+</head>
