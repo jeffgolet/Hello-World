@@ -7,8 +7,6 @@
  <title>My First GitHub Page</title>
 
  <link rel="stylesheet" href="styles.css">
-
-</head>
 body {
 
  font-family: Arial, sans-serif;
@@ -24,3 +22,80 @@ body {
  line-height: 1.6;
 
 }
+nav a:hover {
+
+ text-decoration: underline;
+
+}
+main {
+
+ padding: 20px;
+
+ max-width: 800px;
+
+ margin: 0 auto;
+
+}
+
+main img {
+
+ max-width: 100%;
+
+ height: auto;
+
+ display: block;
+
+ margin: 20px 0;
+
+}
+footer {
+
+ background-color: #333;
+
+ color: white;
+
+ text-align: center;
+
+ padding: 10px;
+
+ position: fixed;
+
+ bottom: 0;
+
+ width: 100%;
+
+}
+p {
+
+ font-size: 1.1em;
+
+}
+
+a {
+
+ color: #4CAF50;
+
+ text-decoration: none;
+
+}
+
+a:hover {
+
+ text-decoration: underline;
+
+}
+img {
+
+ border: 5px solid #4CAF50;
+
+ border-radius: 10px;
+
+}
+main a[href^="mailto:"] {
+
+ color: #ff5722;
+
+ font-weight: bold;
+
+}
+</head>
