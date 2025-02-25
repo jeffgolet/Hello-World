@@ -14,7 +14,7 @@ body {
 
  color: #f5f5dc;
 
- background-color: beige;
+ background-color: #f5f5dc;
 
  margin: 0;
 
@@ -57,9 +57,9 @@ main img {
 <style>
 footer {
 
- background-color: #333;
+ background-color: #f5f5dc;
 
- color: white;
+ color: Beige;
 
  text-align: center;
 
