@@ -1,72 +1,182 @@
-/* General Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
+/* Base Styles */
+:root {
+    --primary: #6c5ce7;
+    --secondary: #a29bfe;
+    --dark: #2d3436;
+    --light: #f5f6fa;
+    --white: #ffffff;
 }
 
-/* Navigation Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* Navigation */
 .navbar {
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5rem;
-}
-
-.nav-link {
-    font-weight: 500;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #0d6efd;
-    color: white;
-    padding: 3rem 0;
-    margin-bottom: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/gaming-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
 }
 
-/* Product Cards */
-.card {
-    transition: transform 0.3s ease;
+.hero-content h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-.card-img-top {
+.hero-buttons .btn {
+    margin: 0 10px;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-/* Sell Form Styles */
-.sell-form {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+.product-info {
+    padding: 15px;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #343a40;
+.price {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge.new {
+    background-color: var(--primary);
     color: white;
-    padding: 1.5rem 0;
-    margin-top: 2rem;
 }
 
-/* Responsive Adjustments */
+.badge.used {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* Sell CTA */
+.sell-cta {
+    background-color: var(--primary);
+    color: white;
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+.sell-cta h2 {
+    font-size: 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 50px 0 20px;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: var(--white);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .hero {
-        padding: 2rem 0;
+    .hero-content h1 {
+        font-size: 2.2rem;
     }
     
-    .card {
-        margin-bottom: 15px;
+    .hero-buttons .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
     }
-}
+    
+    .sell-cta .text-end {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+    }
