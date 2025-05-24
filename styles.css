@@ -1,116 +1,72 @@
-<head>
-<meta charset="UTF-8">
-
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- <title>My First GitHub Page</title>
-
- <link rel="stylesheet" href="styles.css">
-
-<style>
+/* General Styles */
 body {
-
- font-family: Arial, sans-serif;
-
- color: #f5f5dc;
-
- background-color: #f5f5dc;
-
- margin: 0;
-
- padding: 0;
-
- line-height: 1.6;
-
-}
-nav a:hover {
-
- text-decoration: underline;
-
-}
-</style>
-
-<style>
-main {
-
- padding: 20px;
-
- max-width: 800px;
-
- margin: 0 auto;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-main img {
-
- max-width: 100%;
-
- height: auto;
-
- display: block;
-
- margin: 20px 0;
-
+/* Navigation Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-</style>
 
-<style>
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0d6efd;
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+/* Product Cards */
+.card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Sell Form Styles */
+.sell-form {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Footer Styles */
 footer {
-
- background-color: #f5f5dc;
-
- color: Beige;
-
- text-align: center;
-
- padding: 10px;
-
- position: fixed;
-
- bottom: 0;
-
- width: 100%;
-
-}
-</style>
-
-<style>
-p {
-
- font-size: 1.1em;
-
+    background-color: #343a40;
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
 }
 
-a {
-
- color: #4CAF50;
-
- text-decoration: none;
-
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
 }
-
-a:hover {
-
- text-decoration: underline;
-
-}
-</style>
-
-<style>
-img {
-
- border: 5px solid #4CAF50;
-
- border-radius: 10px;
-
-}
-<style>
-main a[href^="mailto:"] {
-
- color: #ff5722;
-
- font-weight: bold;
-
-}
-</style>
-</head>
