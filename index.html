@@ -1,99 +1,303 @@
 <!DOCTYPE html>
-
-<html lang=”en”>
-
+<html lang="en">
 <head>
-
-    <meta charset=”UTF-8”>
-
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
-
-    <title>GameTech – Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css rel=”stylesheet”>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTrade Hub | Buy & Sell Games, Consoles & Laptops</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-
-  
-
-    <nav class=”navbar navbar-expand-lg navbar-dark bg-dark”>
-
-        <div class=”container”>
-
-            <a class=”navbar-brand” href=”index.html”>GameTech</a>
-
-            <div class=”collapse navbar-collapse”>
-
-                <ul class=”navbar-nav me-auto”>
-
-                    <li class=”nav-item”><a class=”nav-link active” href=”index.html”>Home</a></li>
-
-                    <li class=”nav-item”><a class=”nav-link” href=”products.html”>Products</a></li>
-
-                    <li class=”nav-item”><a class=”nav-link” href=”sell.html”>Sell</a></li>
-
-                    <li class=”nav-item”><a class=”nav-link” href=”about.html”>About</a></li>
-
-                    <li class=”nav-item”><a class=”nav-link” href=”contact.html”>Contact</a></li>
-
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-gamepad me-2"></i>GameTrade Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sell.html">Sell Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-
             </div>
-
         </div>
-
     </nav>
 
-    <div class=”bg-primary text-white p-5 text-center”>
-
-        <h1>Welcome to GameTech</h1>
-
-        <p>Buy and sell gaming consoles and laptops</p>
-
-    </div>
-
-    <div class=”container mt-4”>
-
-        <div class=”row”>
-
-            <div class=”col-md-4”>
-
-                <h3>New Devices</h3>
-
-                <p>Latest gaming consoles and laptops at competitive prices</p>
-
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Game On!</h1>
+                <p>Buy new & used games, consoles, and laptops. We also buy your used games!</p>
+                <div class="hero-buttons">
+                    <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                    <a href="sell.html" class="btn btn-outline-light">Sell Your Games</a>
+                </div>
             </div>
-
-            <div class=”col-md-4”>
-
-                <h3>Used Devices</h3>
-
-                <p>Quality checked pre-owned devices with warranty</p>
-
-            </div>
-
-            <div class=”col-md-4”>
-
-                <h3>Sell Your Device</h3>
-
-                <p>Get cash for your used gaming equipment</p>
-
-            </div>
-
         </div>
+    </section>
 
-    </div>
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <span class="badge new">New</span>
+                        <img src="images/ps5.jpg" alt="PS5 Console">
+                        <div class="product-info">
+                            <h3>PlayStation 5</h3>
+                            <p class="price">$499.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <span class="badge used">Used</span>
+                        <img src="images/xbox-series-x.jpg" alt="Xbox Series X">
+                        <div class="product-info">
+                            <h3>Xbox Series X</h3>
+                            <p class="price">$399.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <span class="badge new">New</span>
+                        <img src="images/gaming-laptop.jpg" alt="Gaming Laptop">
+                        <div class="product-info">
+                            <h3>ASUS ROG Laptop</h3>
+                            <p class="price">$1,299.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <span class="badge used">Used</span>
+                        <img src="images/god-of-war.jpg" alt="God of War">
+                        <div class="product-info">
+                            <h3>God of War Ragnarök</h3>
+                            <p class="price">$39.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class=”bg-dark text-white mt-5 p-3 text-center”>
+    <!-- Sell CTA -->
+    <section class="sell-cta">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2>Got Used Games?</h2>
+                    <p>We buy used games in good condition for cash or store credit!</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="sell.html" class="btn btn-light btn-lg">Sell Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p>&copy; 2023 GameTech – School Project</p>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>GameTrade Hub</h3>
+                    <p>Your one-stop shop for gaming needs since 2015.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="sell.html">Sell Games</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Gaming St, Game City</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@gametradehub.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GameTrade Hub. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+    </html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTrade Hub | Buy & Sell Games, Consoles & Laptops</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-gamepad me-2"></i>GameTrade Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sell.html">Sell Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Game On!</h1>
+                <p>Buy new & used games, consoles, and laptops. We also buy your used games!</p>
+                <div class="hero-buttons">
+                    <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                    <a href="sell.html" class="btn btn-outline-light">Sell Your Games</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <span class="badge new">New</span>
+                        <img src="images/ps5.jpg" alt="PS5 Console">
+                        <div class="product-info">
+                            <h3>PlayStation 5</h3>
+                            <p class="price">$499.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <span class="badge used">Used</span>
+                        <img src="images/xbox-series-x.jpg" alt="Xbox Series X">
+                        <div class="product-info">
+                            <h3>Xbox Series X</h3>
+                            <p class="price">$399.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <span class="badge new">New</span>
+                        <img src="images/gaming-laptop.jpg" alt="Gaming Laptop">
+                        <div class="product-info">
+                            <h3>ASUS ROG Laptop</h3>
+                            <p class="price">$1,299.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <span class="badge used">Used</span>
+                        <img src="images/god-of-war.jpg" alt="God of War">
+                        <div class="product-info">
+                            <h3>God of War Ragnarök</h3>
+                            <p class="price">$39.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell CTA -->
+    <section class="sell-cta">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2>Got Used Games?</h2>
+                    <p>We buy used games in good condition for cash or store credit!</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="sell.html" class="btn btn-light btn-lg">Sell Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>GameTrade Hub</h3>
+                    <p>Your one-stop shop for gaming needs since 2015.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="sell.html">Sell Games</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Gaming St, Game City</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@gametradehub.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GameTrade Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
